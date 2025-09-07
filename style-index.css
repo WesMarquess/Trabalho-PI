@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*PARTE RESPONSAVEL PELO VIDEO QUE RODA NO SITE*/
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*BARRA DE NAVEGAÇÃO FLUTUANTE*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 50;
+    margin: auto;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    left: 50px;
+    height: 60px;
+}
+
+.menuAEsquerda,
+.menuADireita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menuAEsquerda ul,
+.menuADireita ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.menuAEsquerda a,
+.menuADireita a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menuAEsquerda li,
+.menuADireita li {
+    color: white;
+    font-weight: bold;
+}
+
+.meioBarraPesquisa {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.barra-pesquisa {
+    width: 400px;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 1, 1);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.barra-pesquisa::placeholder {
+    color: #ffffff;
+}
+
+/*PARTE CENTRAL DO SITE*/
+.bemvindo {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.bemvindo h1 {
+    font-size: 2.5rem;
+}
+
+.bemvindo h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.content-placeholder {
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+}
+
+.tutorial-pagina {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/*RODAPÉ*/
+.footer {
+    background-color: #222;
+    color: #a9a9a9;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-top: 1px solid #444;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+
+}
+
+.footer-links a {
+    color: #a9a9a9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
