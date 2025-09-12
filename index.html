@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <i class="fa-regular fa-play"></i>
     <link rel="stylesheet" href="style-index.css">
+
     <title>BeatStore</title>
 </head>
 
@@ -13,32 +15,43 @@
         <video class="video" id="video" autoplay loop muted playsinline>
             <source src="videos/trim.mp4" type="video/mp4">
         </video>
-        <header class="navbar">
-            <nav>
-                <div class="menuAEsquerda">
-                    <img src="imagens/Logo png.png" alt="Logo da Loja" class="logo">
-                </div>
+        <div class="bemvindo">
 
-                <div class="meioBarraPesquisa">
-                    <input class="barra-pesquisa" type="text" id="barra-pesquisa"
-                        placeholder="Digite algo como Yunk Vino Type Beat...">
-                </div>
-
-                <div class="menuADireita">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="login/login.html">Login</a></li>
-                        <li>Cadastre-se</li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="bemvindo">
-
-                <h2>Seja bem vindo a Beat Store</h2>
-                <h1>Aqui você encontra seu próximo som</h1>
-            </div>
+            <h2>Seja bem vindo a Beat Store</h2>
+            <h1>Aqui você encontra seu próximo som</h1>
+        </div>
     </section>
+    <header class="navbar">
+        <nav>
+            <div class="menuAEsquerda">
+                <img src="imagens/Logo png.png" alt="Logo da Loja" class="logo">
+            </div>
+
+            <div class="meioBarraPesquisa">
+                <input class="barra-pesquisa" type="text" id="barra-pesquisa"
+                    placeholder="Digite algo como Yunk Vino Type Beat...">
+            </div>
+
+            <div class="menuADireita">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login/login.html">Login</a></li>
+                    <li>Cadastre-se</li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
+
+    <div id="corpo">
+        <i id="logo" style="color: aqua;"></i>
+        <h2>Mais vendidos</h2>
+        <div class="cards">
+            <audio src="musics/beat021.wav" id="musica"></audio>
+            <img id="img" src="Imagens/fotoprod.avif" alt="fotoprod">
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer-copyright">
             <p>&copy; 2025 BeatStore. Todos os direitos reservados.</p>
